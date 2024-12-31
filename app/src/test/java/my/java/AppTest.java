@@ -8,6 +8,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
     @Test void appHasAGreeting() {
-        assertEquals(Task1.getArray(1).length, 1);
+        assertEquals(Task1.generateArray(1).length, 1);
     }
 }
