@@ -23,9 +23,11 @@ public class Task2 {
 
     public static void run(String line) {
         HashSet<Character> set = getDuplicateLetters(getLetterEntries(line));
+        System.out.print("Повотряющиеся символы: ");
         if (!set.isEmpty()) {
             for (Character letter : set) System.out.print(letter + " ");
             System.out.println();
         }
+        else System.out.println("отсутствуют");
     }
 }

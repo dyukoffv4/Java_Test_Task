@@ -30,7 +30,9 @@ public class Task1 {
 
     public static void run(int size) {
         double[] array = generateArray(size);
-        System.out.println("Массив чисел: " + array);
+        System.out.print("Массив чисел:");
+        for (double i : array) System.out.print(" " + i);
+        System.out.println();
         System.out.println("Максимальное число: " + arrayMaximal(array));
         System.out.println("Минимальное число:  " + arrayMinimal(array));
         System.out.println("Среднее значение:   " + arrayAverage(array));
